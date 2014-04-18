@@ -1,5 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Gochi+Hand);
+h1,h2,li,p{
+	font-family: 'Gochi Hand', cursive;
+}
+.shadow{
+	-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+}
 iframe{
 	border: 1px solid gray;
+	background-color: #fff;
+}
+img{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+#tabs{
+	background-image:url(images/bgnoise.png);
+	width: 80%;
+	margin: 0 auto;
+	background-repeat:repeat;
 }
 
 /* START PUPPY BLOCKS */
@@ -56,6 +77,10 @@ div[id^="puppy"]{
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+#puppy4 + h2{
+	clear: left;
+	padding-top: 40px;
 }
 
 /* END PUPPY BLOCKS */
@@ -236,10 +261,7 @@ html[xmlns] #menu-bar {  /* IE5 and 6 don't recognize this, so it'll render prop
 	float: left;
 	display: inline; /* IE6 double margin fix */
 	position: relative;
-	margin: 0 5px;
-	-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
-	-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
-	box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);	
+	margin: 0 5px;	
 }
 
 #pricing-table .plan:after {
