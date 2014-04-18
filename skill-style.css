@@ -2,6 +2,65 @@ iframe{
 	border: 1px solid gray;
 }
 
+/* START PUPPY BLOCKS */
+
+div[id^="puppy"]{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 80px;
+	margin-right:30px;
+	border: 1px solid gray;
+	background-repeat: no-repeat;
+	-webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+#puppy1{
+	background-image: url(images/puppy1.jpg);
+}
+#puppy1:hover{
+	-webkit-transform: translate(-3em,-3em);
+    -moz-transform: translate(-3em,-3em);
+    -o-transform: translate(-3em,-3em);
+    -ms-transform: translate(-3em,-3em);
+    transform: translate(-3em,-3em);
+}
+#puppy2{
+	background-image: url(images/puppy2.jpg);
+}
+#puppy2:hover{
+	-webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+}
+#puppy3{
+	background-image: url(images/puppy3.jpg);
+}
+#puppy3:hover{
+	-webkit-transform: translate(3em,0);
+    -moz-transform: translate(3em,0);
+    -o-transform: translate(3em,0);
+    -ms-transform: translate(3em,0);
+    transform: translate(3em,0);
+}
+#puppy4{
+	background-image: url(images/puppy4.jpg);
+}
+#puppy4:hover{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+/* END PUPPY BLOCKS */
+
+
 /* START FANCY MENUS */
 
 #menu-bar {
