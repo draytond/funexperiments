@@ -11,7 +11,7 @@ iframe{
 	border: 1px solid gray;
 	background-color: #fff;
 }
-img{
+#skillville{
 	display: block;
 	width: 80%;
 	margin: 0 auto;
@@ -233,7 +233,6 @@ html[xmlns] #menu-bar {  /* IE5 and 6 don't recognize this, so it'll render prop
 
 /* END FANCY MENUS */
 
-
 /* PRICING TABLE STYLES */
 
 #pricing-table {
@@ -399,6 +398,8 @@ html[xmlns] #menu-bar {  /* IE5 and 6 don't recognize this, so it'll render prop
 
 /* END PRICING TABLE STYLES */
 
+/* START JAVASCRIPT AND JQUERY PAGE STYLES */
+
 #tabs2 input{
   margin-bottom: 20px;
 }
@@ -414,3 +415,19 @@ html[xmlns] #menu-bar {  /* IE5 and 6 don't recognize this, so it'll render prop
 #ajaxTarget p{
   margin: 0;
 }
+
+#tabs2 ul{
+  list-style: none;
+  border: 12px dashed pink;
+  display: inline-block;
+  width: 820px;
+  padding: 10px;
+}
+
+.donut{
+  float: left;
+  padding: 20px;
+  
+}
+
+/* END JAVASCRIPT AND JQUERY PAGE STYLES */

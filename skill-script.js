@@ -167,5 +167,8 @@ $(document).ready(function(){
   			});
   		}
   	});
+
+  	//makes the donuts draggable within the pink dashed box
+  	$( "#sortable" ).sortable();
   	
 });
