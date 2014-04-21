@@ -134,19 +134,24 @@
 			<input id="post" type="button" value="$.post()" />
 			<input id="ajax" type="button" value="$.ajax()" />
 			<div id="ajaxTarget">Some content we want to update...</div>
+			
 			<h2>JSON (JavaScript Object Notation)</h2>
-			<p>The goal here is to read JSON from the server using two methods: the $.getJSON shorthand, and the full-bown $.ajax() method.  If successful, we should see the box below the buttons get populated with a table of contents from the book "JavaScript: The Good Parts" by Douglas Crockford.<p>
+			<p>The goal here is to read JSON from the server using two methods: the $.getJSON shorthand, and the full-bown $.ajax() method.  If successful, we should see the box below the buttons get populated with a table of contents from the book "JavaScript: The Good Parts" by Douglas Crockford.</p>
 			<input id="getjson" type="button" value="$.getJSON" />
 			<input id="jsonajax" type="button" value="$.ajax()" />
 			<input id="jsonreset" type="button" value="RESET" />
 			<div id="jsonTarget">Table of contents should show up here...</div>
+			
 			<h2>JSONP (JSON <em>With Padding</em>)</h2>
-			<p>This example integrates with a third party API so you can look up your state rep!  Since the data is from another domain, it requires JSONP instad of regular ol' JSON.</p>
+			<p>This example integrates with a third party API so you can look the city and state of any zip code!</p>
+			<label for="zip">Type Your Zip Code:</label><input id="zip" type="text" />
+			<p id="mytown"></p>
+			
 			<h2>jQuery</h2>
 			<p>I have already used jQuery in the AJAX and JSON examples above, but here's some more (see source for details):</p>
 		  </section>
 		  <section id="tabs3">
-		  	<p>Coming very soon...<p>
+		  	<p>Coming very soon...</p>
 		  </section>
 		</div>
 		<script src="skill-script.js"></script>

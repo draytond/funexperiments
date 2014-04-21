@@ -149,5 +149,23 @@ $(document).ready(function(){
   	$('#jsonreset').click(function(){
   		$('#jsonTarget').html("Table of contents should show up here...");
   	});
+
+  	$('#zip').keyup(function(event){
+  		var yourzip = $(this).val();
+
+  		if(yourzip.length === 5 && $.isNumeric(yourzip)){
+  			var requestURL = "http://ZiptasticAPI.com/" + yourzip + "?callback=?";
+  			$.getJSON(requestURL, null, function(data){
+  				var outputzip = "";
+  				if(data.city){
+  					outputzip += data.city;
+  				}
+  				if(data.state){
+  					outputzip += ", " + data.state;
+  				}
+  				$('#mytown').html(outputzip);
+  			});
+  		}
+  	});
   	
 });
