@@ -1,0 +1,44 @@
+{
+    "javaScriptTheGoodParts":[
+        {
+            "chapter": 1,
+            "title": "Good Parts"
+        },
+        {
+            "chapter": 2,
+            "title": "Grammar"
+        },
+        {
+            "chapter": 3,
+            "title": "Objects"
+        },
+        {
+            "chapter": 4,
+            "title": "Functions"
+        },
+        {
+            "chapter": 5,
+            "title": "Inheritance"
+        },
+        {
+            "chapter": 6,
+            "title": "Arrays"
+        },
+        {
+            "chapter": 7,
+            "title": "Regular Expressions"
+        },
+        {
+            "chapter": 8,
+            "title": "Methods"
+        },
+        {
+            "chapter": 9,
+            "title": "Style"
+        },
+        {
+            "chapter": 10,
+            "title": "Beautiful Features"
+        },
+    ]
+}

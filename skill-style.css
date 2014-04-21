@@ -403,7 +403,7 @@ html[xmlns] #menu-bar {  /* IE5 and 6 don't recognize this, so it'll render prop
   margin-bottom: 20px;
 }
 
-#ajaxTarget{
+#ajaxTarget, #jsonTarget{
   display:block;
   border: 1px solid green;
   background-color: white;

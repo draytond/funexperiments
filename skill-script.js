@@ -119,4 +119,35 @@ $(document).ready(function(){
          	}
 		});
   	});
+
+  	function printTable(theData){
+  		var theTOC = "<h4>JavaScript: The Good Parts</h4>";
+  		$(theData.javaScriptTheGoodParts).each(function(index,value){
+  			theTOC += "Chapter "+ value.chapter + ": " + value.title + "<br />";
+  		});
+  		$('#jsonTarget').html(theTOC);
+  	}
+
+  	$('#getjson').click(function(){
+  		$.getJSON('ajax/goodparts.json', function(data){
+  			printTable(data);
+  		});
+  	});
+
+  	$('#jsonajax').click(function(){
+  		$.ajax({
+	  		url: "ajax/goodparts.json",
+	  		dataType: "json",
+	  		type: "get",
+	  		cache: false,
+	  		success: function(data){
+	  			printTable(data);
+	  		}
+  		});
+  	});
+
+  	$('#jsonreset').click(function(){
+  		$('#jsonTarget').html("Table of contents should show up here...");
+  	});
+  	
 });
