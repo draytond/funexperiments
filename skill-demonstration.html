@@ -103,6 +103,7 @@
 				    </div> 	
 				</div>
 				<h2>Transforming Puppy Boxes</h2>
+				<p>Mouse over the puppies below to see some cool CSS3 effects.  Before mousing over the last one, make sure to say "roll over!"</p>
 				<div id="puppy1" class="shadow"></div>
 				<div id="puppy2" class="shadow"></div>
 				<div id="puppy3" class="shadow"></div>
@@ -123,7 +124,16 @@
 			<input id="sayButton" type="button" value="Say It" onclick="justSayIt()" />
 			<span id="sayTarget"></span>
 			
-			<h2>AJAX</h2>
+			<h2>AJAX</h2>  
+			<!-- I prefer to use jQuery for AJAX because 
+			1) it's more cross-browser compatible and 
+			2) it's more secure -->
+			<p>Press the buttons to load content into the box using different AJAX methods (view source for details).<p>
+			<input id="load" type="button" value="load()" />
+			<input id="get" type="button" value="$.get()" />
+			<input id="post" type="button" value="$.post()" />
+			<input id="ajax" type="button" value="$.ajax()" />
+			<div id="ajaxTarget">Some content we want to update...</div>
 			<h2>JSON</h2>
 			<h2>jQuery</h2>
 		  </section>

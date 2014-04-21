@@ -19,6 +19,7 @@ img{
 #tabs{
 	background-image:url(images/bgnoise.png);
 	width: 80%;
+  min-width: 1000px;
 	margin: 0 auto;
 	background-repeat:repeat;
 }
@@ -400,4 +401,16 @@ html[xmlns] #menu-bar {  /* IE5 and 6 don't recognize this, so it'll render prop
 
 #tabs2 input{
   margin-bottom: 20px;
+}
+
+#ajaxTarget{
+  display:block;
+  border: 1px solid green;
+  background-color: white;
+  min-height: 50px;
+  padding: 10px;
+}
+
+#ajaxTarget p{
+  margin: 0;
 }

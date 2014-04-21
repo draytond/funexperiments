@@ -1,0 +1,1 @@
+This content was fetched using the full-bown $.ajax() function, rather than one of the shortcut functions.  Before sending, this function also simulates "getting ready to send" by changing the background color of the output box.  It'll also return a custom error if something goes wrong.

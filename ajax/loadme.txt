@@ -1,0 +1,2 @@
+<p id="thePartToLoad">This text was loaded from a separate file on the server using the load() method!  Outstanding!</p>
+<p>The rest of the page that we don't want to load</p>

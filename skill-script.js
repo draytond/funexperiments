@@ -78,5 +78,45 @@ function justSayIt(){
 		default:
 			alert("What is going on???");
 	}
-
 }
+
+// AJAX examples
+$(document).ready(function(){
+	$('#load').click(function(){
+		$('#ajaxTarget').load('ajax/loadme.txt #thePartToLoad');
+	});
+
+	$("#get").click(function(){
+  		$.get("ajax/getme.txt",function(data){
+	    	// I prefer console.log() for debugging since it doesn't stop all of the page's processes
+	    	console.log(data);
+	    	// Note: this isn't going to work locally unless you have a server set up
+	    	$('#ajaxTarget').html(data);
+  		});
+	});
+
+	$("#post").click(function(){
+	    $.post("myserver.php",{username:"UzrN4m3", password:"SuP3R_S3cRET-P4SSW0rd"},function(data,status){
+	      $('#ajaxTarget').html("Username and Password data passed to server:<br />" + data + "<br />Status: " + status);
+	    });
+  	});
+
+  	$("#ajax").click(function(){
+	    $.ajax({
+	    	url:"ajax/ajaxme.txt",
+	    	beforeSend: function(){
+	    		// found this random color generator on 
+	    		//http://css-tricks.com/snippets/javascript/random-hex-color/ 
+	    		//although I modified it slightly to include the # so it's easier to use in this case
+	    		var randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
+	    		$('#ajaxTarget').css('background-color',randomColor);  
+	    	},
+	    	success:function(response){
+				$("#ajaxTarget").html(response);
+			},
+			error:function() { 
+              $('#ajaxTarget').html("Hmmm, it looks like there was some kind of error.  Are you trying to run this locally?");
+         	}
+		});
+  	});
+});
