@@ -176,7 +176,12 @@ $(document).ready(function(){
 
   	//making Wile E Coyote eplode when clicked
   	$(".wilecoyote").click(function(){
-  		$(this).effect('puff',400);
+  		var myeffects = ["explode","blind","bounce","clip","fade",
+  		"fold","highlight","puff","pulsate","shake"];
+
+  		var i = Math.floor(Math.random() * 10);
+
+  		$(this).effect(myeffects[i],400);
   		$('#resetwilecoyote').show();
   	});
 
