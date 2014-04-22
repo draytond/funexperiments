@@ -170,5 +170,20 @@ $(document).ready(function(){
 
   	//makes the donuts draggable within the pink dashed box
   	$( "#sortable" ).sortable();
+
+  	//turns an ordinary text field into a datepicker
+  	$("#birthday").datepicker();
+
+  	//making Wile E Coyote eplode when clicked
+  	$(".wilecoyote").click(function(){
+  		$(this).effect('puff',400);
+  		$('#resetwilecoyote').show();
+  	});
+
+  	$('#resetwilecoyote').click(function(){
+  		console.log('clicked');
+  		$('.wilecoyote').show();
+  		$(this).hide();
+  	});
   	
 });

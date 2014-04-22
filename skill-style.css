@@ -427,7 +427,11 @@ html[xmlns] #menu-bar {  /* IE5 and 6 don't recognize this, so it'll render prop
 .donut{
   float: left;
   padding: 20px;
-  
 }
+
+#resetwilecoyote{
+    display: none;
+}
+
 
 /* END JAVASCRIPT AND JQUERY PAGE STYLES */
