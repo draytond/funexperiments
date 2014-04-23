@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 		<link rel="stylesheet" href="skill-style.css" />
-
+		<meta charset="UTF-8">
 		<title>David Drayton Skill Demonstration</title>
 	</head>
 	<body>
@@ -160,9 +163,13 @@
 			</ul>
 			<p>Example 2: Datepickers.  HTML5 provides a datepicker, which eventually will be better from an accessiility standpoint, but for now this is the most widely-supported way to go.</p>
 			<label for="birthday">Enter Your Birthday: </label><input type="text" id="birthday" placeholder="5/8/76" />
-			<p>Example 3: Effects.  Click on Wile E. Coyote below.<p>
+			<p>Example 3: Effects.  Click on Wile E. Coyote to make a random effect happen to him!<p>
 			<img src="images/wile.gif" alt="wile e coyote" class="wilecoyote" />
 			<input type="button" value="Come back!" id="resetwilecoyote" />
+			<p>Example 4: Animation transitions.  Similar to CSS3 transitions, but with a larger variety of effects, and more cross-browser compatibility.<p>
+			<div id="transitionColor">
+				<p>ThiS iS CraZY!!!</p>
+			</div>
 		  </section>
 		  <section id="tabs3">
 		  	<p>Coming very soon...</p>

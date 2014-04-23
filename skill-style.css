@@ -433,5 +433,12 @@ html[xmlns] #menu-bar {  /* IE5 and 6 don't recognize this, so it'll render prop
     display: none;
 }
 
+#transitionColor{
+  display: block;
+  width: 300px;
+  height: 200px;
+  background-color: olive;
+  color: white;
+}
 
 /* END JAVASCRIPT AND JQUERY PAGE STYLES */
