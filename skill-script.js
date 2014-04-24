@@ -24,8 +24,6 @@ function Whisper(words){   //  subclass1
 
 Whisper.prototype = Object.create(Talk.prototype);
 
-Whisper.prototype.constructor = Whisper;
-
 Whisper.prototype.print = function fn2(){   //  subclass1 method
 	var toPrint = '<span style="font-size:50%; color: gray;">' + Talk.prototype.get.call(this) + "</span>";
 	document.getElementById('sayTarget').innerHTML=toPrint;
@@ -36,8 +34,6 @@ function Shout(words){    //  subclass2
 }
 
 Shout.prototype = Object.create(Talk.prototype);
-
-Shout.prototype.constructor = Shout;
 
 Shout.prototype.print = function fn2(){   //  subclass2 method
 	var toPrint = '<span style="font-size:150%; color: red;">' + Talk.prototype.get.call(this) + "!!!</span>";
@@ -191,4 +187,4 @@ $(document).ready(function(){
   		$(this).hide();
   	});
   	
-});
+});  // end of $(document).ready
