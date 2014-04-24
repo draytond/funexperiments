@@ -1,8 +1,3 @@
-//initialize the tabs that make up the page
-$(function() {
-    $( "#tabs" ).tabs();
-});
-
 //example of object oriented javascript
 //using inheritance to define different ways of talking (whisper and yell, with Talk as base class)
 
@@ -76,8 +71,12 @@ function justSayIt(){
 	}
 }
 
-// AJAX examples
+
 $(document).ready(function(){
+	//initialize the tabs that make up the page with jquery accordion widget
+    $( "#tabs" ).tabs();
+
+    // AJAX examples
 	$('#load').click(function(){
 		$('#ajaxTarget').load('ajax/loadme.txt #thePartToLoad');
 	});
