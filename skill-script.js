@@ -5,12 +5,12 @@ function Talk(words){    // class
 	this._message = words;
 };
 
-Talk.prototype.get = function fn1(){   // method1
+Talk.prototype.get = function(){   // method1
 	return this._message;
 };
 
-Talk.prototype.print = function fn1(){   // method2
-	document.getElementById('sayTarget').innerHTML=this._message;
+Talk.prototype.print = function(){   // method2
+	document.getElementById('sayTarget').innerHTML = this._message;
 };
 
 function Whisper(words){   //  subclass1
@@ -19,7 +19,7 @@ function Whisper(words){   //  subclass1
 
 Whisper.prototype = Object.create(Talk.prototype);
 
-Whisper.prototype.print = function fn2(){   //  subclass1 method
+Whisper.prototype.print = function(){   //  subclass1 method
 	var toPrint = '<span style="font-size:50%; color: gray;">' + Talk.prototype.get.call(this) + "</span>";
 	document.getElementById('sayTarget').innerHTML=toPrint;
 }
@@ -30,10 +30,10 @@ function Shout(words){    //  subclass2
 
 Shout.prototype = Object.create(Talk.prototype);
 
-Shout.prototype.print = function fn2(){   //  subclass2 method
+Shout.prototype.print = function(){   //  subclass2 method
 	var toPrint = '<span style="font-size:150%; color: red;">' + Talk.prototype.get.call(this) + "!!!</span>";
 	toPrint = toPrint.toUpperCase();
-	document.getElementById('sayTarget').innerHTML=toPrint;
+	document.getElementById('sayTarget').innerHTML = toPrint;
 }
 
 function getRadioValue() {  
